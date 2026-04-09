@@ -27,3 +27,18 @@ html {
 	padding-bottom: 2rem;
 	border-bottom: 2px solid rgb(220, 200, 100);
 }
+
+
+
+
+
+html, body {
+	height: 100%;
+	
+	font-face: "Caprasimo", serif; 
+}
+
+
+p {
+	font-family: "Caprasimo", serif;
+}
