@@ -9,10 +9,13 @@ html {
 	color: whitesmoke;
 	font-size: 5rem;	
 	overflow: hidden;
+
 	background-image: url(../img/wind.webp);
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: cover;
+	/* shorthand, but has issues on Safari */
+	/* background: black url("../img/flames.gif") no repeat center/cover; */
 }
 
 .grid-container {
@@ -23,20 +26,62 @@ html {
 	margin: 10% 4rem 0 4rem;
 }
 
+
+div {transition-property: transform;
+     transition-duration: 3s;
+	}
+
+
+
 .last {
+	/* transform: Skew(30deg,30deg); */
 	padding-bottom: 2rem;
-	border-bottom: 2px solid rgb(220, 200, 100);
+	border-bottom: 2px solid rgb(220, 200, 180);
+}
+
+
+
+/*
+.last:hover {
+	animation-name: growAndGlow;
+	animation-duration: 3s;
+}
+*/
+@keyframes growAndGlow {
+	from {
+		color: whitesmoke;
+	}
+
+	50% {
+		color: dodgerblue;
+		transform:skewX(30deg);
+
+	}
+ 
+	to {
+		transform: scale(3);
+		color: red;
+	}
 }
 
 
 
 
 
-html, body {
-	height: 100%;
-	
-	font-face: "Caprasimo", serif; 
+
+
+p {
+	font-family: "Caprasimo", serif;
 }
+
+h1 {
+	font-size: 5em;
+	font-family: "Caprasimo", serif;
+}
+
+
+
+
 
 
 p {
