@@ -71,6 +71,7 @@ div {transition-property: transform;
 html, body, h1 {
 	font-face: "Caprasimo", serif;
 }
+
 p {
 	font-family: "Caprasimo", serif;
 }
@@ -80,6 +81,8 @@ h1 {
 	font-family: "Caprasimo", serif;
 }
 
-
+html, body{
+	font-family: "Caprasimo", serif;
+}
 
 
